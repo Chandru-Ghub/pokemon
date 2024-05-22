@@ -1,10 +1,16 @@
 .main{
     /* background: red; */
+    background:linear-gradient(rgba(5, 5, 5, 0.968),rgba(0, 0, 0, 0.968)) ,
+    url('https://firebasestorage.googleapis.com/v0/b/shopyecommerce-e73af.appspot.com/o/ProductImages%2F7257918f-8009-4ff2-a25e-0042cad3082a?alt=media&token=febfb9f0-bf86-48b2-a018-cf16c5d5570a') ;
     padding: 80px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
 }
 .mycard{
     background: transparent;
@@ -20,14 +26,12 @@
     font-size: 30px;
 }
 .img1{
-    background: rgba(231, 231, 232, 0.032);
+    background: rgba(224, 6, 6, 0.03);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
-    min-width: auto;
-    max-width: auto;
+    /* padding: 10px; */
     >img{
         min-width: 250px;
     }
@@ -39,7 +43,7 @@
 }
 
 .section{
-    background: rgba(231, 231, 232, 0.167);
+    background: rgba(67, 67, 67, 0.467);
     display: flex;
     flex-direction: column;
     padding: 20px 0;
@@ -50,11 +54,13 @@
 .sec2{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+    width: auto;
     >.img2, .img4, .img5{
         background: rgba(0, 0, 0, 0.266);
-        padding-left: 10px;
-        margin-left: 20px;
+        /* padding-left: 10px; */
         width: 100px;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -65,16 +71,15 @@
     
 }
 .btns{
-    /* background: gray; */
+
     display: flex;
     align-items: center;
     gap: 20px;
     justify-content: start;
     margin: 30px 0;
-    padding-right: 100px;
     >button{
         padding: 10px 0;
-        width: 120px;
+        width: 110px;
         background-color: transparent;
         border: 1px solid rgb(63, 63, 63);
         color: white;
@@ -131,8 +136,8 @@
 .close{
     position: absolute;
     cursor: pointer;
-    bottom: 5px;
-    right: 15px;
+    top: 5px;
+    right: 5px;
     display: flex;
     color: red;
     cursor: pointer;
@@ -142,17 +147,47 @@
     padding-left: 20px;
 }
 .sec1{
-
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    >.power{
+        /* background: green; */
+        >p{
+            font-style: italic;
+            font-size: 25px;
+            color: rgb(255, 71, 71);
+            font-weight: 800;
+        }
+        >ol{
+            /* background: red; */
+            padding-top: 10px;
+            padding-left: 20px;
+            color: white;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+    }
     >p{
+        display: flex;
+        align-items: center;
         color: yellow;
         text-shadow: 2px 1px black ;
         text-transform: capitalize;
         font-size: 20px;
-
+        /* background: red; */
         >span{
             color: rgb(255, 255, 255);
-        text-transform: capitalize;
+            text-transform: capitalize;
+            width: 80px;
         }
+        >P{
+            padding-left: 10px;
+        }
+    }
+    
+    >span{
+        color: rgb(255, 255, 255);
+        text-transform: capitalize;
     }
 }
 .review{
@@ -166,4 +201,116 @@
     right: -500px;
     width:250px;
     transition: 2s;
+}
+
+@media (max-width:700px){
+    .section{
+        width: 100%;
+    }
+    .id{
+        font-size: 20px;
+    }
+    .img1{
+        >h2{
+            color: rgb(244, 244, 4);
+            text-shadow: 2px 4px black ;
+            text-transform: uppercase;
+        }
+    }
+    .sec1{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        >.power{
+            >p{
+                font-size: 20px;
+            }
+            >ol{
+                /* background: red; */
+                padding-top: 10px;
+                padding-left: 20px;
+                color: white;
+                font-size: 15px;
+                text-transform: capitalize;
+            }
+        }
+        >p{
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width:600px){
+.pok{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    left: 10px;
+    transition: 2s;
+    >img{
+        width: 150px;
+    }
+}
+.pokhide{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    left: -500px;
+    transition: 2s;
+    >img{
+        width: 150px;
+    }
+}   
+.msg{
+    position: absolute;
+    width: 200px;
+    padding: 5px;
+    top: -20px;
+    left: 150px;
+    font-weight: 500;
+    font-size: 14px;
+    >span{
+        padding-left: 2px;
+    }
+    >.close{
+        color: rgb(255, 0, 0);
+    }
+}
+}
+@media (max-width:500px){
+.pok{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    left: 10px;
+    transition: 2s;
+    >img{
+        width: 100px;
+    }
+}
+.pokhide{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    left: -500px;
+    transition: 2s;
+    >img{
+        width: 100px;
+    }
+}   
+.msg{
+    position: absolute;
+    width: 200px;
+    padding: 5px;
+    top: -20px;
+    left: 80px;
+    font-weight: 500;
+    font-size: 12px;
+    >span{
+        padding-left: 2px;
+    }
+    >.close{
+        color: rgb(255, 0, 0);
+    }
+}
 }

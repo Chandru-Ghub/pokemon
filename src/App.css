@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* .container{
   background:linear-gradient(rgba(56, 60, 61, 0.645),rgba(124, 123, 123, 0.525)) ,url('https://theilluminerdi.com/wp-content/uploads/2020/05/20200503_014220_0000.png') ;
   

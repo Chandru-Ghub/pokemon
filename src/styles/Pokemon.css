@@ -77,6 +77,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
     >img{
         width: 150px;
     }
@@ -138,22 +139,27 @@
 .bub{
     position: fixed;
     bottom: 0;
-    background: rgb(97, 203, 97);
+    background: rgb(247, 247, 209);
     width: 300px;
     border-radius: 200px;
     height: 300px;
     transition: 1s;
+    display: flex;
+    align-items: center;justify-content: center;
     left: 0;
     z-index: 10;
+    box-shadow: 2px 2px 10px rgb(106, 106, 106);
+    border: 3px solid black;
     >.msg{
         background: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         position: absolute;
         right: 100px;
         top: -50px;
+        box-shadow: 5px 5px  20px rgb(155, 155, 155);
     }
     >img{
-        width: 250px;
+        width: 300px;
     }
 }
 .bubhide{
@@ -168,12 +174,42 @@
     z-index: 10;
     >.msg{
         background: rgb(255, 255, 255);
-        color: white;
+        color: rgb(0, 0, 0);
         position: absolute;
         right: 100px;
         top: -50px;
     }
     >img{
-        width: 250px;
+        width: 300px;
+    }
+}
+
+@media (max-width:700px){
+    .bub{
+        width: 230px;
+        border-radius: 200px;
+        height: 230px;
+        >.msg{
+            font-size: 13px;
+        }
+        >img{
+            width: 200px;
+        }
+    }
+}
+@media (max-width:500px){
+    .bub{
+        width: 150px;
+        border-radius: 200px;
+        height: 150px;
+        >.msg{
+            font-size: 10px;
+            position: absolute;
+            left: 20px;
+            top: -70px;
+        }
+        >img{
+            width: 130px;
+        }
     }
 }

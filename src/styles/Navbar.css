@@ -6,23 +6,16 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    >ul{
-        display: flex;
-        list-style: none;
-        justify-content: flex-end;
-        gap: 30px;
-        color: white;
-        padding: 10px;
-        padding-right: 50px;
-        >li{
-        color: rgb(244, 244, 4);
-        text-shadow: 2px 4px black ;
-        text-transform: uppercase;
-        font-weight: 600;
-        }
-        >li:hover{
-            transform: scale(1.1);
-        }
+   padding: 8px;
+   /* >ul{
+    display: flex;
+    align-items: center;justify-content: center;
+   } */
+   
+}
+.midlogo{
+    >img{
+        width: 150px;
     }
 }
 .logo{
@@ -50,4 +43,121 @@
   100%{
       transform:  rotate(360deg);
   }
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    padding: 10px;
+    padding-right: 80px;
+    >li{
+    text-transform: uppercase;
+    font-weight: 600;
+
+    }
+    >li:hover{
+        transform: scale(1.1);
+        color: rgb(21, 21, 20);
+
+    }
+    
+}
+.navbarhide{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 30px;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    padding-right: 80px;
+    >li{
+        text-transform: uppercase;
+        font-weight: 600;
+    
+        }
+    >li:hover{
+        transform: scale(1.1);
+        color: rgb(244, 244, 4);
+
+    }
+    
+}
+.bur{
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width:700px){
+    .bur{
+        display: block;
+    }
+    .midlogo{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: start;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        flex-direction: column;
+        position: fixed;
+        background: rgb(196, 196, 3);
+        top:75px;
+        bottom: 0;
+        width: 250px;
+        padding-top: 50px;
+        left: 0;
+        transition: 1s;
+        >li{
+            text-transform: uppercase;
+            font-weight: 600;
+            width: 100%;
+            padding-left: 20px;
+            margin-top: 20px;
+        
+            }
+            >li:hover{
+                transform: scale(1.1);
+                color: rgb(244, 244, 4);
+        
+            }
+        
+    }
+    .navbarhide{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        color: white;
+        padding: 10px;
+        padding-right: 50px;
+        flex-direction: column;
+        position: fixed;
+        background: rgb(196, 196, 3);
+        top:75px;
+        bottom: 0;
+        left: -500px;
+        width: 200px;
+        justify-content: start;
+        transition: 1s;
+        >li{
+            text-transform: uppercase;
+            font-weight: 600;
+            width: 100%;
+            padding-left: 20px;
+            margin-top: 20px;
+    
+        }
+        >li:hover{
+            transform: scale(1.1);
+        }
+        
+    }
 }

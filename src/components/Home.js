@@ -43,7 +43,7 @@ function animi(){
       </div>
       <div className={greet?"bubhide":'bub'}>
       <div className="msg">
-            <span onClick={()=>setGreet(true)} className='close'>X</span>
+            <span onClick={()=>setGreet(true)} className='material-symbols-outlined close'>close</span>
             You can find 100s of pokemon characters here 
             to see more click load more option!! 
         </div>

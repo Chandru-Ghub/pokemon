@@ -88,14 +88,26 @@ const Cardpage = () => {
                 <div>
                     <div className='sec1'>
                     <div className='id'>#{data.id}</div>
-                    <p className='type'><span>type</span>:{type}</p>
-                    <p className='species'><span>Species </span>:{species}</p>
-                    <p className='weight'><span>Weight </span>:{data.weight}</p>
+                    <p className='type'>
+                        <span>type</span>:
+                        <p>{type}</p>
+                    </p>
+                    <p className='species'>
+                        <span>Species </span>:
+                        <p>{species}</p>
+                    </p>
+                    <p className='species'>
+                        <span>weight </span>:
+                        <p>{data.weight}</p>
+                    </p>
+                    <div className='power'>
+                    <p>ABILITY</p>
                     <ol>
                         {ability.map((a)=>
                         <li>{a.ability.name}</li>
                         )}
                     </ol>
+                    </div>
                     </div>
                     <div className="btns">
                     <button className='like' onClick={()=>liked(data)}>👍 Like</button>
@@ -122,9 +134,9 @@ const Cardpage = () => {
     </div>
     <div className={greet?'pok':'pokhide'}>
         <div className="msg">
-            <span onClick={()=>setGreet(false)} className='close'>X</span>
+            <span onClick={()=>setGreet(false)} className='material-symbols-outlined close'>close</span>
             Welcome to the pokeSwipe
-            <span> Like</span> or <span>Dislike</span>
+            <span> Like</span> or <span>Dislike </span>
             to continue the game
         </div>
     <img  src={pok} alt="" />
