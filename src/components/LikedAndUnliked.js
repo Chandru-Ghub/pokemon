@@ -8,14 +8,12 @@ const LikedAndUnliked = () => {
   const [greet, setGreet] = useState(true);
 
   // get liked and disliked pokemon from local storage
-
   useEffect(() => {
     setLiked(JSON.parse(localStorage.getItem("liked")));
     setDisLiked(JSON.parse(localStorage.getItem("disliked")));
   }, []);
 
   // create animation effect
-
   useEffect(() => {
     animi();
   }, []);

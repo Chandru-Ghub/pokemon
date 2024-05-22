@@ -49,7 +49,6 @@ const Cardpage = () => {
   }
 
   // Set liked pokemons in local storage
-
   function liked(likes) {
     setLike(like);
     setPick(true);
@@ -64,7 +63,6 @@ const Cardpage = () => {
   }
 
   // Set Disliked pokemons in local storage
-
   function disLiked(dislike) {
     setLike(disLike);
     setPick(true);

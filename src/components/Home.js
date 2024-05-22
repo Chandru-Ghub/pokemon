@@ -27,7 +27,6 @@ const Home = () => {
   }
 
   // get pokemon by name
-
   useEffect(() => {
     getpokemon();
   }, []);

@@ -8,7 +8,8 @@ const Pokemons = ({ id, name, img, type, img2 }) => {
   useEffect(() => {
     if (set == "bug") {
       setTp("#07dd07");
-    } else if (set == "fire") setTp("#ddab07");
+    } 
+    else if (set == "fire") setTp("#ddab07");
     else if (set == "grass") setTp("#07dd07");
     else setTp("#07c8dd");
   }, [name]);
