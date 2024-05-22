@@ -1,9 +1,7 @@
 .container{
     padding: 0 20px;
-    /* background:linear-gradient(rgba(5, 5, 5, 0.947),rgba(0, 0, 0, 0.968)) ,url('https://firebasestorage.googleapis.com/v0/b/shopyecommerce-e73af.appspot.com/o/ProductImages%2F2d6bf5f8-a7f2-437a-acc3-7f423f52caf4?alt=media&token=96d6a142-01e3-4ecc-b899-214f993cf292') ; */
 }
 .collection{
-    /* background: blue; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,8 +9,7 @@
     padding:15px 10px;
     border: 2px solid rgb(47, 47, 47);
     border-radius: 20px;
-    /* background:linear-gradient(rgba(5, 5, 5, 0.874),rgb(0, 0, 0)) ,url('https://firebasestorage.googleapis.com/v0/b/shopyecommerce-e73af.appspot.com/o/ProductImages%2F993c5efa-ba44-4e70-8671-87355fdd9852?alt=media&token=20736cc2-3e26-47be-820a-5b269a17c021') ; */
-    background-size: contain;
+        background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -72,7 +69,6 @@
     }
 }
 .img{
-    /* background: rgb(186, 186, 186); */
     width: 200px;
     display: flex;
     align-items: center;
@@ -94,7 +90,6 @@
     }
 }
 .load{
-    /* background: red; */
     padding: 50px 0;
     display: flex;
     align-items: center;

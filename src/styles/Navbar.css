@@ -7,10 +7,6 @@
     top: 0;
     z-index: 100;
    padding: 8px;
-   /* >ul{
-    display: flex;
-    align-items: center;justify-content: center;
-   } */
    
 }
 .midlogo{
@@ -29,8 +25,6 @@
     }
     >p{
         color: yellow;
-        /* font-size: 50px; */
-        /* background: red; */
         font-weight: 700;
     }
 }
@@ -60,7 +54,7 @@
     }
     >li:hover{
         transform: scale(1.1);
-        color: rgba(0, 0, 0, 0.652);
+        color: yellow;
 
     }
     
