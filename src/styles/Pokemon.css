@@ -45,7 +45,7 @@
         color: yellow;
     }
     >.abli{
-        display: flex;
+        display: flex !important;
         width: 100%;
         justify-content: space-around;
         gap: 20px;
