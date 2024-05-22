@@ -13,4 +13,5 @@ List page contains collection of pokemons initial around 20 of them we have opti
 
 Liked and Disliked Pokemons: >>> 
 LIKES page: Contains list of liked and dislik characters with to individual counts  
-![poki2](https://github.com/Chandru-Ghub/pokemon/assets/133525338/dec0cc46-bf07-4b16-ad73-e1d3f45814e9)
+![poki3](https://github.com/Chandru-Ghub/pokemon/assets/133525338/de5f1250-56f9-4260-8072-03b712b60b0e)
+
