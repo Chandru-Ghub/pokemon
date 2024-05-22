@@ -5,18 +5,12 @@ import bub from '../images/drg.png'
 const LikedAndUnliked = () => {
   const [liked,setLiked] = useState([])
   const [disLiked,setDisLiked] = useState([])
-  const [count,setCount] = useState(0)
   const [greet,setGreet] = useState(true)
 
   useEffect(()=>{
       setLiked(JSON.parse(localStorage.getItem('liked')))
       setDisLiked(JSON.parse(localStorage.getItem('disliked')))
-      let total = {
-        likes:liked.length,
-        dislike:disLiked.length
-      }
-      setCount(total)
-      console.log(count)
+
   },[])
 
   useEffect(()=>{
@@ -41,7 +35,7 @@ const LikedAndUnliked = () => {
      <div className='left'>
      <h1>👍 Liked</h1>
         {liked?<div className="likedlist">
-        <div className="counters">#{count.likes}</div>
+        <div className="counters">#{liked.length}</div>
         {liked.map(pokemon=>
         <Pokemons img2={pokemon.sprites.other.showdown.front_default} id={pokemon.id} name={pokemon.name} img={pokemon.sprites.other.dream_world.front_default} type={pokemon.types} ability={pokemon.abilities} />
   
@@ -54,7 +48,7 @@ const LikedAndUnliked = () => {
      <div className='right'>
      <h1> 👎DisLiked</h1>
         {disLiked?<div className="dislikedlist">
-     <div className="counters2">#{count.dislike}</div>
+     <div className="counters2">#{disLiked.length}</div>
         {disLiked.map(pokemon=>
         <Pokemons img2={pokemon.sprites.other.showdown.front_default} id={pokemon.id} name={pokemon.name} img={pokemon.sprites.other.dream_world.front_default} type={pokemon.types} ability={pokemon.abilities} />
   
