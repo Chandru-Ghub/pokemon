@@ -1,0 +1,179 @@
+.container{
+    padding: 0 20px;
+    /* background:linear-gradient(rgba(5, 5, 5, 0.947),rgba(0, 0, 0, 0.968)) ,url('https://firebasestorage.googleapis.com/v0/b/shopyecommerce-e73af.appspot.com/o/ProductImages%2F2d6bf5f8-a7f2-437a-acc3-7f423f52caf4?alt=media&token=96d6a142-01e3-4ecc-b899-214f993cf292') ; */
+}
+.collection{
+    /* background: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding:15px 10px;
+    border: 2px solid rgb(47, 47, 47);
+    border-radius: 20px;
+    /* background:linear-gradient(rgba(5, 5, 5, 0.874),rgb(0, 0, 0)) ,url('https://firebasestorage.googleapis.com/v0/b/shopyecommerce-e73af.appspot.com/o/ProductImages%2F993c5efa-ba44-4e70-8671-87355fdd9852?alt=media&token=20736cc2-3e26-47be-820a-5b269a17c021') ; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.card{
+    background: rgba(255, 255, 255, 0.082);
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    
+    >.myid{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 20px;
+    }
+    >.pokname{
+    color: yellow;
+       font-size: 20px;
+       width: 70%;
+       text-align: center;
+       font-style: italic;
+       text-transform: uppercase;
+       border-bottom: 1px solid rgb(66, 65, 65);
+    }
+    >.poktype{
+        color: yellow;
+    }
+    >.abli{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        gap: 20px;
+        background: rgba(0, 0, 0, 0.253);
+        >p{
+            text-transform: uppercase;
+            padding: 10px;
+            display: flex;
+            justify-content: center;align-items: center;
+            gap: 5px;
+            >span{
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        
+        >img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+.img{
+    /* background: rgb(186, 186, 186); */
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >img{
+        width: 150px;
+    }
+}
+.pokilogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    >img{
+        width: 200px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgb(98, 98, 98);
+    }
+}
+.load{
+    /* background: red; */
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >button{
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 20px;
+        padding:5px 20px;
+        color: yellow;
+        border: none;
+        font-style: italic;
+        >img{
+            width: 50px;
+            position: relative;
+            left: 0px;
+            transition: .5s;
+        }
+    }
+    >button:hover{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 20px;
+        padding:5px 25px;
+        color: white;
+        text-decoration: underline;
+        >img{
+            width: 50px;
+            position: relative;
+            left: 30px;
+            transition: 1s;
+        }
+    }
+}
+
+.bub{
+    position: fixed;
+    bottom: 0;
+    background: rgb(97, 203, 97);
+    width: 300px;
+    border-radius: 200px;
+    height: 300px;
+    transition: 1s;
+    left: 0;
+    z-index: 10;
+    >.msg{
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        position: absolute;
+        right: 100px;
+        top: -50px;
+    }
+    >img{
+        width: 250px;
+    }
+}
+.bubhide{
+    position: fixed;
+    bottom: 0;
+    background: rgb(97, 203, 97);
+    width: 300px;
+    border-radius: 200px;
+    height: 300px;
+    left: -500px;
+    transition: 1s;
+    z-index: 10;
+    >.msg{
+        background: rgb(29, 29, 29);
+        color: white;
+        position: absolute;
+        right: 100px;
+        top: -50px;
+    }
+    >img{
+        width: 250px;
+    }
+}

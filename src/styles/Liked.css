@@ -1,0 +1,43 @@
+.likedPokemons{
+    background: rgb(0, 0, 0);
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left, .right{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    flex-direction: column;
+}
+.left{
+    width: 50%;
+    border: 1px solid green;
+    box-shadow: 2px -5px 20px green;
+    border-radius: 30px;
+    >h1{
+        color: green;
+        font-style: italic;
+    }
+}
+.right{
+    width: 50%;
+    border: 1px solid rgb(251, 59, 59);
+    box-shadow: 2px -5px 20px red;
+    border-radius: 30px;
+    >h1{
+        color: red;
+        font-style: italic;
+    }
+}
+.likedlist, .dislikedlist{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

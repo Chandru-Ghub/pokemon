@@ -1,0 +1,169 @@
+.main{
+    /* background: red; */
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mycard{
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+}
+.id{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.img1{
+    background: rgba(231, 231, 232, 0.032);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    min-width: auto;
+    max-width: auto;
+    >img{
+        min-width: 250px;
+    }
+    >h2{
+        color: rgb(244, 244, 4);
+        text-shadow: 2px 4px black ;
+        text-transform: uppercase;
+    }
+}
+
+.section{
+    background: rgba(231, 231, 232, 0.167);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+    padding-right: 30px;
+}
+.sec2{
+    display: flex;
+    flex-wrap: wrap;
+    >.img2, .img4, .img5{
+        background: rgba(0, 0, 0, 0.266);
+        padding-left: 10px;
+        margin-left: 20px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+
+    }
+    
+}
+.btns{
+    /* background: gray; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: start;
+    margin: 30px 0;
+    padding-right: 100px;
+    >button{
+        padding: 10px 0;
+        width: 120px;
+        background-color: transparent;
+        border: 1px solid rgb(63, 63, 63);
+        color: white;
+        cursor: pointer;
+        transition: .5s;
+        font-size: 20px;
+        font-style: italic;
+
+    }
+    >button:active{
+        transform: scale(1.19);
+    }
+    >.like:hover{
+        box-shadow:8px -5px 2px rgba(8, 183, 8, 0.804);
+        /* color: black; */
+    
+    }
+    >.dislike:hover{
+        box-shadow:8px -5px 2px rgba(245, 20, 20, 0.592);
+
+    }
+}
+.pok{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    left: 10px;
+    transition: 2s;
+    >img{
+        width: 200px;
+    }
+}
+.pokhide{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    left: -500px;
+    transition: 2s;
+    >img{
+        width: 200px;
+    }
+}   
+.msg{
+    background: rgba(255, 255, 0, 0.974);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    position: absolute;
+    width: 200px;
+    padding: 5px;
+    top: 20px;
+    left: 200px;
+    font-weight: 500;
+}
+.close{
+    position: absolute;
+    cursor: pointer;
+    bottom: 5px;
+    right: 15px;
+    display: flex;
+    color: red;
+    cursor: pointer;
+
+}
+.section{
+    padding-left: 20px;
+}
+.sec1{
+
+    >p{
+        color: yellow;
+        text-shadow: 2px 1px black ;
+        text-transform: capitalize;
+        font-size: 20px;
+
+        >span{
+            color: rgb(255, 255, 255);
+        text-transform: capitalize;
+        }
+    }
+}
+.review{
+    position: absolute;
+    right: -80px;
+    width:250px;
+    transition: 2s;
+}
+.reviewhide{
+    position: absolute;
+    right: -500px;
+    width:250px;
+    transition: 2s;
+}

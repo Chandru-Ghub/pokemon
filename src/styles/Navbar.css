@@ -1,0 +1,53 @@
+.nav{
+    background: rgba(0, 0, 0, 0.822);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(198, 198, 3, 0.681);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    >ul{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        gap: 30px;
+        color: white;
+        padding: 10px;
+        padding-right: 50px;
+        >li{
+        color: rgb(244, 244, 4);
+        text-shadow: 2px 4px black ;
+        text-transform: uppercase;
+        font-weight: 600;
+        }
+        >li:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+.logo{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >img{
+        width: 60px;
+        animation: plan 10s infinite linear;
+    }
+    >p{
+        color: yellow;
+        /* font-size: 50px; */
+        /* background: red; */
+        font-weight: 700;
+    }
+}
+
+
+@keyframes plan {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform:  rotate(360deg);
+  }
+}
