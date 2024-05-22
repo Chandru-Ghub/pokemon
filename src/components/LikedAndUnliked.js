@@ -12,21 +12,25 @@ const LikedAndUnliked = () => {
     <div className='likedPokemons'>
      <div className='left'>
      <h1>👍 Liked</h1>
-        <div className="likedlist">
+        {liked?<div className="likedlist">
         {liked.map(pokemon=>
         <Pokemons img2={pokemon.sprites.other.showdown.front_default} id={pokemon.id} name={pokemon.name} img={pokemon.sprites.other.dream_world.front_default} type={pokemon.types} ability={pokemon.abilities} />
   
       )}
-        </div>
+        </div>:<div className='info'>
+            Give your first like
+          </div>}
      </div>
      <div className='right'>
      <h1> 👎DisLiked</h1>
-        <div className="dislikedlist">
+        {disLiked?<div className="dislikedlist">
         {disLiked.map(pokemon=>
         <Pokemons img2={pokemon.sprites.other.showdown.front_default} id={pokemon.id} name={pokemon.name} img={pokemon.sprites.other.dream_world.front_default} type={pokemon.types} ability={pokemon.abilities} />
   
       )}
-        </div>
+        </div>:<div className='info'>
+          You liked all the pokemon
+          </div>}
      </div>
      
     </div>
